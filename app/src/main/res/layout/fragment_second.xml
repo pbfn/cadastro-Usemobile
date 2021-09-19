@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SecondFragment">
+
+    <EditText
+        android:id="@+id/edit_text_cep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o CEP"
+        android:inputType="number"
+        android:maxLength="9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Digite a cidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_cep" />
+
+    <EditText
+        android:id="@+id/edit_text_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Digite o endereço"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_cidade" />
+
+    <EditText
+        android:id="@+id/edit_text_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Digite o número"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_endereco" />
+
+    <EditText
+        android:id="@+id/edit_text_complemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite o complemento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_numero"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_numero" />
+
+    <Button
+        android:id="@+id/button_next2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Próxima tela"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_complemento" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
